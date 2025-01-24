@@ -63,10 +63,25 @@ img {
   padding: 24px 0;
 }
 
-.nav-main-text .link:active {
+.current {
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: #404bbf;
+  left: 0;
+  border-radius: 2px;
+  bottom: 0;
+}
+
+/* .nav-main-text .link:active {
   border-bottom: 4px solid #404bbf;
   border-radius: 2px;
-}
+} */
 
 .address-cont-list {
   display: flex;
@@ -176,6 +191,11 @@ a {
   background: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* box-shadow: inset 0 0 0 0 teal; */
 }
 
 .main-section .main-title {
@@ -290,6 +310,28 @@ a {
 
 /* portfolio */
 
+.port-hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #5d70de;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+  overflow: auto;
+}
+
+.port-card:hover .port-hover-text {
+  transform: translateY(0);
+}
+
+.port-hover-block {
+  position: relative;
+  overflow: hidden;
+}
+
 .section-portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -346,4 +388,11 @@ a {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+/* animation */
+
+.button-text:hover {
+  transition-property: background-color;
+  transition-duration: 300ms;
 }
