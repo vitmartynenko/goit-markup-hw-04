@@ -25,6 +25,21 @@ img {
   height: auto;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+  letter-spacing: 2%;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+
 .container {
   max-width: 1158px;
   padding-left: 15px;
@@ -84,30 +99,6 @@ img {
   gap: 40px;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #434455;
-  letter-spacing: 2%;
-  background-color: #ffffff;
-}
-
-a {
-  text-decoration: none;
-}
-
-.button:hover,
-.button:focus {
-  background-color: #404bbf;
-  color: #fff;
-}
-
-.button-text:hover {
-  transition-property: background-color;
-  transition-duration: 300ms;
-}
-
 .address-line .link {
   color: #434455;
 }
@@ -122,6 +113,12 @@ a {
 .nav-main-text .link:hover,
 .nav-main-text .link:focus {
   color: #404bbf;
+}
+
+.nav-main-text .link:hover,
+.nav-main-text .link:focus {
+  transition-property: background-color;
+  transition-duration: 300ms;
 }
 
 /* logo */
@@ -167,6 +164,22 @@ a {
 .button-text:focus {
   background-color: #404bbf;
 }
+
+button {
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+
+/* .button:hover,
+.button:focus {
+  background-color: #404bbf;
+  color: #fff;
+} */
+
+/* .button-text:hover .button:focus {
+} */
+
+/* main section */
 
 .nav-main-text {
   font-weight: 500;
@@ -350,6 +363,11 @@ a {
   background-color: #4d5ae5;
 }
 
+.soc-item-link:hover .soc-item-link:focus {
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+
 /* portfolio */
 
 .port-hover-text {
@@ -449,10 +467,11 @@ a {
 .soc-text {
   font-weight: 500;
   color: #ffffff;
+  padding-bottom: 16px;
 }
 
 .social {
+  display: flex;
   align-items: baseline;
   margin-left: 120px;
-  align-items: baseline;
 }
