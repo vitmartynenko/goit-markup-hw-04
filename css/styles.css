@@ -65,6 +65,7 @@ img {
 
 .current {
   position: relative;
+  top: 1px;
 }
 
 .current::after {
@@ -77,11 +78,6 @@ img {
   border-radius: 2px;
   bottom: 0;
 }
-
-/* .nav-main-text .link:active {
-  border-bottom: 4px solid #404bbf;
-  border-radius: 2px;
-} */
 
 .address-cont-list {
   display: flex;
@@ -105,6 +101,11 @@ a {
 .button:focus {
   background-color: #404bbf;
   color: #fff;
+}
+
+.button-text:hover {
+  transition-property: background-color;
+  transition-duration: 300ms;
 }
 
 .address-line .link {
@@ -189,13 +190,18 @@ a {
 
 .main-section {
   background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
-  background-image: url(../images/people-office.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  /* box-shadow: inset 0 0 0 0 teal; */
 }
 
 .main-section .main-title {
@@ -231,6 +237,7 @@ a {
 
 .section-team .section-team-text {
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .section-title {
@@ -260,6 +267,18 @@ a {
 
 .feat-item {
   width: calc((100% - 72px) / 4);
+}
+
+.feat-pic-box {
+  display: flex;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 .hidden-title {
@@ -308,6 +327,29 @@ a {
   text-align: center;
 }
 
+.team-soc-list {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.soc-item-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: #404bbf;
+  border-radius: 50%;
+  fill: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.soc-item-link:hover {
+  background-color: #4d5ae5;
+}
+
 /* portfolio */
 
 .port-hover-text {
@@ -315,12 +357,15 @@ a {
   top: 0;
   left: 0;
   padding: 20px;
-  font-size: 16px;
+  color: #f4f4fd;
   background-color: #5d70de;
   height: 100%;
   transform: translateY(100%);
   transition: transform 300ms linear;
   overflow: auto;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .port-card:hover .port-hover-text {
@@ -376,9 +421,14 @@ a {
 }
 
 .section-footer {
+  display: flex;
   background: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.section-footer .container {
+  left: 0;
 }
 
 .footer-text {
@@ -390,9 +440,19 @@ a {
   max-width: 264px;
 }
 
-/* animation */
+.social .foot-soc-list {
+  display: flex;
+  gap: 16px;
+  /* justify-content: center; */
+}
 
-.button-text:hover {
-  transition-property: background-color;
-  transition-duration: 300ms;
+.soc-text {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.social {
+  align-items: baseline;
+  margin-left: 120px;
+  align-items: baseline;
 }
