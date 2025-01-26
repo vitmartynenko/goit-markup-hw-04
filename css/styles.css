@@ -378,6 +378,10 @@ button {
   background-color: #4d5ae5;
 }
 
+.soc-list-item {
+  fill: #f4f4fd;
+}
+
 .soc-item-link:hover .soc-item-link:focus {
   transition-property: background-color;
   transition-duration: 300ms;
@@ -449,8 +453,11 @@ button {
 
 .section-footer .container {
   display: flex;
-  /* align-items: baseline; */
-  /* left: 0; */
+  align-items: baseline;
+}
+
+.section-footer .foot-logo-p {
+  margin-right: 120px;
 }
 
 .section-footer .logo-main {
@@ -477,20 +484,21 @@ button {
 
 .social .foot-soc-list {
   display: flex;
-  /* align-items: baseline; */
-
   gap: 16px;
-  /* justify-content: center; */
+}
+
+.foot-soc-list .soc-item-link {
+  background-color: #4d5ae5;
+}
+
+.foot-soc-list .soc-item-link:hover {
+  background-color: #31d0aa;
 }
 
 .soc-text {
   font-weight: 500;
   color: #ffffff;
   padding-bottom: 16px;
-}
-
-.social {
-  /* display: flex; */
-  /* align-items: baseline; */
-  margin-left: 120px;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
