@@ -107,6 +107,7 @@ a {
 
 .address-line .link {
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-line .link:hover,
 .address-line .link:focus {
@@ -119,7 +120,8 @@ a {
 }
 
 .nav-main-text .link {
-  color: #2e2f42;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .nav-main-text > .link:first-child {
@@ -131,11 +133,11 @@ a {
   color: #404bbf;
 }
 
-.nav-main-text .link:hover,
+/* .nav-main-text .link:hover,
 .nav-main-text .link:focus {
   transition-property: background-color;
   transition-duration: 300ms;
-}
+} */
 
 /* logo */
 
@@ -375,7 +377,8 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc-item-link:hover {
+.soc-item-link:hover,
+.soc-item-link:focus {
   background-color: #404bbf;
 }
 
